@@ -1,2 +1,50 @@
-public class State {
-}
+/* This class will have the properties and constructor for the state data
+
+ */
+
+public class State
+{
+
+    // properties
+    private String state; // variable for name of State
+    private String capital; // variable for State capital
+    private int population;  // variable for States population
+
+    // Constructor
+    public State()
+    {
+
+        state = "";
+        capital = "";
+        population = 0;
+
+    }// end Public State Constructor
+
+    public State(String state, String capital, int population)
+    {
+
+        this.state = state;
+        this.capital = capital;
+        this.population = population;
+
+    }// end public State(String state, String capital, int population){
+
+    // Accessor methods for each property
+
+    public String getState()
+    {
+        return state;
+    }//end getState
+
+    public String getCapital()
+    {
+        return capital;
+    }//end getCapital
+
+    public int getPopulation()
+    {
+        return population;
+    }// end population
+
+
+}// end State

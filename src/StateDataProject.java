@@ -8,10 +8,19 @@ will be for the information for each state
 * */
 
 
-public class StateDataProject throws Exception {
+public class StateDataProject {
 
     // The main method will act as the starting point for this program
-    public static void main(String[] args){
+    public static void main(String[] args)
+    {
+        State[] stateInfo = new State[50];
+
+        int maintCount;
+
+        // call the method to load the array
+        StateList(stateInfo);
+
+
 
 
 
