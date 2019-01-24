@@ -1,45 +1,44 @@
 import java.util.*;
 import java.io.*;
 
+public class StateList {
 
+    // This class will be responsible for loading the data from the .txt file into an array
+    public static void loadArray(State[]) throws FileNotFoundException {
 
-// This class will be responsible for loading the data from the .txt file into an array
-public static void StateList(State[]) throws exception{
+        // temporary variables to for the properties read from the .txt file
+        String inState;
+        String inCapital;
+        String inPopulation;
+        //String line;
 
-    // temporary variables to for the properties read from the .txt file
-    String inState;
-    String inCapital;
-    String inPopulation;
-    //String line;
+        int count = 0;// loop counter
 
-    int count = 0;// loop counter
+        String fileName = ("statedata.txt");
 
-    String fileName = ("statedata.txt");
-
-    // this Scanner object will allow me to read the data from the .txt file
-    Scanner infile = new Scanner(new File(fileName));
+        // this Scanner object will allow me to read the data from the .txt file
+        Scanner infile = new Scanner(new File(fileName));
 
     /*  this while loop will read each lind of data from the .txt file using the
         Scanner object, i will also be using the hasNextLine() method to determine
         if there is another proceeding line of data.
      */
-    try
-    {
-        while(infile.hasNextLine()){
 
-        inState=infile.nextLine();
-        inCapital=infile.nextLine();
-        inPopulation=infile.nextLine();
-        //inPopulation = Integer.parseInt(infile.nextLine());
+        while (infile.hasNextLine()) {
 
-        // this will initialize each element in the array with the properties of the State class constructor
-        inData[count]=new State(inState,inCapital,inPopulation);
+            inState = infile.nextLine();
+            inCapital = infile.nextLine();
+            inPopulation=infile.nextLine();
+            //inPopulation = Integer.parseInt(infile.nextLine());
+
+            // this will initialize each element in the array with the properties of the State class constructor
+            inData[count] = new State(inState, inCapital, inPopulation);
 
         }// end while
         infile.close();
 
 
-    }
-    //public StateList() throws FileNotFoundException {
-    }
-}// end StateList
+        //public StateList() throws FileNotFoundException {
+
+    }// end StateList
+}

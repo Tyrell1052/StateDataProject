@@ -15,7 +15,7 @@ public class StateDataProject {
     {
         State[] stateInfo = new State[50];
 
-        int maintCount;
+        int mainCount;
 
         // call the method to load the array
         StateList(stateInfo);
