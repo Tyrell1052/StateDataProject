@@ -9,7 +9,7 @@ public class StateList {
         // temporary variables for the properties to read from the .txt file
         String inState;
         String inCapital;
-        int inPopulation;
+        String inPopulation;
         //String line;
         int count = 0;// loop counter
 
@@ -24,15 +24,17 @@ public class StateList {
         if there is another proceeding line of data.
      */
 
-        while (infile.hasNextLine()) {
+        while (count < inData.length) {
+            //System.out.println(infile.nextLine());
 
             inState = infile.nextLine();
             inCapital = infile.nextLine();
-            //inPopulation=infile.nextLine();
-            inPopulation = Integer.parseInt(infile.nextLine());
+            inPopulation=infile.nextLine();
+            //inPopulation = Integer.parseInt(infile.nextLine());
 
             // this will initialize each element in the array with the properties of the State class constructor
             inData[count] = new State(inState, inCapital, inPopulation);
+            count ++;
 
         }// end while
         infile.close();

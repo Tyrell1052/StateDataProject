@@ -8,18 +8,18 @@ public class State
     // properties
     private String state; // variable for name of State
     private String capital; // variable for State capital
-    private int population;  // variable for States population
+    private String population;  // variable for States population
 
     // Constructor
     public State()
     {
         state = "";
         capital = "";
-        population = 0;
+        population = "";
 
     }// end Public State Constructor
 
-    public State(String state, String capital, int population)
+    public State(String state, String capital, String population)
     {
 
         this.state = state;
@@ -40,7 +40,7 @@ public class State
         return capital;
     }//end getCapital
 
-    public int getPopulation()
+    public String getPopulation()
     {
         return population;
     }// end population
