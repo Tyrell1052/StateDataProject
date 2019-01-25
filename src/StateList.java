@@ -11,10 +11,10 @@ public class StateList {
         String inCapital;
         int inPopulation;
         //String line;
-
         int count = 0;// loop counter
 
         String fileName = ("statedata.txt");
+
 
         // this Scanner object will allow me to read the data from the .txt file
         Scanner infile = new Scanner(new File(fileName));

@@ -16,19 +16,19 @@ public class StateDataProject {
         State[] stateInfo = new State[50]; //Array of 50 states
 
         int i; // loop counter
+        int stateCount; // actual number
 
-        // call the method to load the array
-        StateList.loadArray(stateInfo);
+        // load cities into an array from a datafile
+        stateCount = StateList.loadArray(st);
 
-        System.out.print("Data from the array of Monopoly board squares. Each line has:\n");
-        for(i=0; i<50; i++)
-        {
-            System.out.println(stateInfo[i].toString());
-        }
-
-
-
-
+//        // call the method to load the array
+//        StateList.loadArray(stateInfo);
+//
+//        System.out.println("Data from the array of Monopoly board squares. Each line has:\n");
+//        for(i=0; i<50; i++)
+//        {
+//            System.out.println(stateInfo[i].toString());
+//        }
 
     }//end main()
 
