@@ -15,10 +15,16 @@ public class StateDataProject {
     {
         State[] stateInfo = new State[50]; //Array of 50 states
 
-        int mainCount; // loop counter
+        int i; // loop counter
 
         // call the method to load the array
-        StateList.
+        StateList.loadArray(stateInfo);
+
+        System.out.print("Data from the array of Monopoly board squares. Each line has:\n");
+        for(i=0; i<50; i++)
+        {
+            System.out.println(stateInfo[i].toString());
+        }
 
 
 
