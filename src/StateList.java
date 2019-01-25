@@ -4,12 +4,12 @@ import java.io.*;
 public class StateList {
 
     // This class will be responsible for loading the data from the .txt file into an array
-    public static void loadArray(State[]) throws FileNotFoundException {
+    public static void loadArray(State[] inData) throws Exception {
 
-        // temporary variables to for the properties read from the .txt file
+        // temporary variables for the properties to read from the .txt file
         String inState;
         String inCapital;
-        String inPopulation;
+        int inPopulation;
         //String line;
 
         int count = 0;// loop counter
@@ -28,8 +28,8 @@ public class StateList {
 
             inState = infile.nextLine();
             inCapital = infile.nextLine();
-            inPopulation=infile.nextLine();
-            //inPopulation = Integer.parseInt(infile.nextLine());
+            //inPopulation=infile.nextLine();
+            inPopulation = Integer.parseInt(infile.nextLine());
 
             // this will initialize each element in the array with the properties of the State class constructor
             inData[count] = new State(inState, inCapital, inPopulation);

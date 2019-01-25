@@ -13,7 +13,6 @@ public class State
     // Constructor
     public State()
     {
-
         state = "";
         capital = "";
         population = 0;
