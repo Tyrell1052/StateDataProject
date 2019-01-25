@@ -28,9 +28,13 @@ public class StateDataProject {
         System.out.println("Data from the array of states:\n");
         for(i=0; i<50; i++)
         {
+            System.out.print("State: ");
             System.out.println(stateInfo[i].getState());
+            System.out.print("Capital: ");
             System.out.println(stateInfo[i].getCapital());
+            System.out.print("Population: ");
             System.out.println(stateInfo[i].getPopulation());
+            System.out.println(" ");
 
         }
 
