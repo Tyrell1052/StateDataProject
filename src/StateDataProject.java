@@ -11,14 +11,14 @@ will be for the information for each state
 public class StateDataProject {
 
     // The main method will act as the starting point for this program
-    public static void main(String[] args)
+    public static void main(String[] args) throws Exception
     {
-        State[] stateInfo = new State[50];
+        State[] stateInfo = new State[50]; //Array of 50 states
 
-        int mainCount;
+        int mainCount; // loop counter
 
         // call the method to load the array
-        StateList(stateInfo);
+        StateList.
 
 
 
