@@ -8,6 +8,8 @@ will be for the information for each state
 * */
 
 
+import java.util.Scanner;
+
 public class StateDataProject {
 
     // The main method will act as the starting point for this program
@@ -37,6 +39,18 @@ public class StateDataProject {
             System.out.println(" ");
 
         }
+
+        StateList.searchState(stateInfo);
+
+//        // this will allow the user to enter the state in search of
+//        Scanner keyboard = new Scanner(System.in);
+//
+//        // get the name of the State from the user
+//        System.out.print("Please enter the States name to search: ");
+//        String targetState;
+//        targetState = keyboard.nextLine();
+//
+//        State.searchState(targetState);
 
     }//end main()
 

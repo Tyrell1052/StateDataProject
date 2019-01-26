@@ -29,18 +29,52 @@ public class StateList {
 
             inState = infile.nextLine();
             inCapital = infile.nextLine();
-            inPopulation=infile.nextLine();
+            inPopulation = infile.nextLine();
             //inPopulation = Integer.parseInt(infile.nextLine());
 
             // this will initialize each element in the array with the properties of the State class constructor
             inData[count] = new State(inState, inCapital, inPopulation);
-            count ++;
+            count++;
 
         }// end while
         infile.close();
+        {
+
+        } //end infile
+    }
+
+    public static void searchState(State[] state){
 
 
-        //public StateList() throws FileNotFoundException {
+         Scanner keyboard = new Scanner(System.in);
+
+         while(true){
+                // get the name of the State from the user
+            System.out.print("Please enter the States name to search,please be sure to capitalize the fist letter: ");
+
+            String targetState = keyboard.nextLine();
+
+            for(int i = 0; i < state.length; i++){
+
+            if(state[i].getState().equals(targetState)) {
+                System.out.print("State: ");
+                System.out.println(state[i].getState());
+                System.out.print("Capital: ");
+                System.out.println(state[i].getCapital());
+                System.out.print("Population: ");
+                System.out.println(state[i].getPopulation());
+                break;
+
+            }else if(i == state.length - 1 && !state[i].getState().equals(targetState)){
+                System.out.println("Sorry no state by hat name found. Please try again, be sure to capitalize the first letter ");
+
+
+                }//end else if
+
+            }// end for
+
+         }//end while
+
+      }//end searchState
 
     }// end StateList
-}

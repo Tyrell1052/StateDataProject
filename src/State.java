@@ -35,25 +35,41 @@ public class State
         this.population = population;
 
     }// end public State(String state, String capital, int population){
-    public String searchState(){
+//    public static State searchState(String n){
+//
+//        int index = 0;
+//
+//        // this will allow the user to enter the state in search of
+//        Scanner keyboard = new Scanner(System.in);
+//
+//        // Print intro message to the user
+//        System.out.print("This program will allow you to either print each State, Capital & Population \n" +
+//                "or search for a particular State, its Capital & Population ");
+//
+//        // get the name of the State from the user
+//        System.out.print("Please enter the States name to search: ");
+//
+//        while(states[index].getState().compareTo(n)!=0){
+//            index ++;
+//
+//        }//end while
+//        return states[index];
+//
+//
+////        targetState = keyboard.nextLine();
+////
+////        // this method will search through the array for the target state
+////        for(searchCounter = 0; (!stateFound) && (searchCounter < arrayToSearch.length); searchCounter++){
+////
+////            if(arrayToSear[searchCounter].matches(targetState)){
+////                System.out.println(getState());
+////
+////            }
+////        }// end for
 
-        // this will allow the user to enter the state in search of
-        Scanner keyboard = new Scanner(System.in);
-
-        // Print intro message to the user
-        System.out.print("This program will allow you to either print each State, Capital & Population \n" +
-                "or search for a particular State, its Capital & Population ");
-
-        // get the name of the State from the user
-        System.out.print("Please enter the States name to search: ");
-        targetState = keyboard.nextLine();
-
-        // this method will search through the array for the target state
-        for(searchCounter = 0; (!stateFound) && DefaultSynthStyle.StateInfo)
 
 
-
-    }//end Search
+    //}//end Search
 
     // Accessor methods for each property
 
