@@ -10,11 +10,10 @@ public class StateList {
         String inState;
         String inCapital;
         String inPopulation;
-        //String line;
+
         int count = 0;// loop counter
 
         String fileName = ("statedata.txt");
-
 
         // this Scanner object will allow me to read the data from the .txt file
         Scanner infile = new Scanner(new File(fileName));
@@ -23,34 +22,30 @@ public class StateList {
         Scanner object, i will also be using the hasNextLine() method to determine
         if there is another proceeding line of data.
      */
-
         while (count < inData.length) {
-            //System.out.println(infile.nextLine());
 
             inState = infile.nextLine();
             inCapital = infile.nextLine();
             inPopulation = infile.nextLine();
-            //inPopulation = Integer.parseInt(infile.nextLine());
 
             // this will initialize each element in the array with the properties of the State class constructor
             inData[count] = new State(inState, inCapital, inPopulation);
-            count++;
+            count++; // this will increase the loop counter
 
         }// end while
         infile.close();
-        {
 
-        } //end infile
-    }
+    }// end loadArray
+
+//*********************************************************************************************************************
 
     public static void searchState(State[] state){
-
 
          Scanner keyboard = new Scanner(System.in);
 
          while(true){
                 // get the name of the State from the user
-            System.out.print("Please enter the States name to search,please be sure to capitalize the fist letter: ");
+            System.out.print("Please enter the name of the state you want to search be sure to capitalize the first letter: ");
 
             String targetState = keyboard.nextLine();
 
@@ -66,8 +61,7 @@ public class StateList {
                 break;
 
             }else if(i == state.length - 1 && !state[i].getState().equals(targetState)){
-                System.out.println("Sorry no state by hat name found. Please try again, be sure to capitalize the first letter ");
-
+                System.out.println("Sorry no state by that name found. Please try again, be sure to capitalize the first letter ");
 
                 }//end else if
 
